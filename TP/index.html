@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Newsletter</title>
 </head>
 <body>
-    <div class="c-subscribe-box u-align-center">
-        <div class="rainbow"><span></span><span></span></div>
-        <div class="c-subscribe-box__wrapper">
-          <h3 class="c-subscribe-box__title">Join my newsletter</h3>
-          <p class="c-subscribe-box__desc">You like articles of the blog? Sign up for updates via email.</p>
-          <form class="c-form c-form--accent c-subscribe-box__form">
-            <input class="u-align-center" type="email" placeholder="name@cool.internet"/>
-            <input class="full-button" type="submit" value="Subscribe"/>
-          </form>
-        </div>
-      </div>
+      <section class="newsletter">
+        <header>
+          <h1>
+            <span class="header_script">S'abonner à la newsletter </span>
+            Newsletter
+          </h1>
+          <div id="title"></div>
+        </header>
+        <form method="post">
+          <fieldset>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="We don't share our mailing list." required />
+          </fieldset>
+          <button id="subscribe" type="button"> S'inscrire </button>
+        </form>
+    </section>
 </body>
 <script src="app.js"></script>
 </html>
